@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageRêve - Découvrez le Monde</title>
+    <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+    <!-- Préchargeur -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- En-tête -->
+    <!-- Modifiez la section nav dans votre header comme ceci -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>VoyageRêve</span>
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#offres" class="nav-link">Offres Spéciales</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-cta">
+                    <a href="login.html" class="btn btn-outline">Connexion</a>
+                    <a href="register.html" class="btn btn-primary">S'inscrire</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">
+                Explorez des Destinations
+                <span class="highlight">Extraordinaires</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-up delay-1">
+                Découvrez des expériences uniques et créez des souvenirs inoubliables
+            </p>
+
+            <!-- Formulaire de recherche -->
+            <div class="search-container animate-fade-up delay-2">
+                <form class="search-form">
+                    <div class="search-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Où souhaitez-vous aller ?">
+                    </div>
+                    <div class="search-group">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="date" id="departure">
+                    </div>
+                    <div class="search-group">
+                        <i class="fas fa-user-friends"></i>
+                        <select>
+                            <option value="">Voyageurs</option>
+                            <option value="1">1 Voyageur</option>
+                            <option value="2">2 Voyageurs</option>
+                            <option value="3">3 Voyageurs</option>
+                            <option value="4">4+ Voyageurs</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-search">
+                        <i class="fas fa-search"></i>
+                        Rechercher
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-text">Destinations</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10k+</span>
+                <span class="stat-text">Clients Satisfaits</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-text">Avis Positifs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Destinations Populaires -->
+    <section class="destinations" id="destinations">
+        <div class="section-header">
+            <h2 class="section-title">Destinations Populaires</h2>
+            <p class="section-subtitle">Découvrez nos destinations les plus appréciées</p>
+        </div>
+
+        <div class="destinations-grid">
+            <!-- Carte Destination 1 -->
+            <article class="destination-card">
+                <div class="card-image">
+                    <img src="assets/images/paris.jpg" alt="Paris" loading="lazy">
+                    <div class="card-tag">Populaire</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                        <span class="reviews">(2.5k avis)</span>
+                    </div>
+                    <h3>Paris, France</h3>
+                    <p>La ville lumière vous attend avec ses monuments iconiques et sa gastronomie unique.</p>
+                    <div class="card-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>3-7 jours</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-users"></i>
+                            <span>2-8 pers.</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price">
+                            <span class="amount">599€</span>
+                            <span class="period">/personne</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Réserver</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Répéter pour d'autres destinations... -->
+        </div>
+
+        <div class="view-more">
+            <a href="destinations.html" class="btn btn-outline-primary">
+                Voir toutes les destinations
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Voyages Sécurisés</h3>
+                <p>Votre sécurité est notre priorité avec des partenaires de confiance et une assistance 24/7.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Meilleurs Prix</h3>
+                <p>Garantie du meilleur prix et options de paiement flexibles pour tous les budgets.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Expériences Uniques</h3>
+                <p>Des voyages personnalisés et des expériences authentiques pour des souvenirs inoubliables.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Restez Informé</h2>
+            <p>Inscrivez-vous pour recevoir nos meilleures offres</p>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Votre adresse email">
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>VoyageRêve est votre partenaire de confiance pour des voyages inoubliables à travers le monde. Découvrez des destinations extraordinaires et créez des souvenirs pour la vie.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Destinations Populaires</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Offres Spéciales</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Guides de Voyage</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Réservations</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Assurance Voyage</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Location de Voitures</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Guide Touristique</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Conciergerie</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Rue du Voyage, Paris</li>
+                    <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                    <li><i class="fas fa-envelope"></i> contact@voyagereve.com</li>
+                    <li><i class="fas fa-clock"></i> Lun-Ven: 9h-18h</li>
+                </ul>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="payment-methods">
+                <img src="/api/placeholder/51/30" alt="Visa">
+                <img src="/api/placeholder/51/30" alt="Mastercard">
+                <img src="/api/placeholder/51/30" alt="PayPal">
+                <img src="/api/placeholder/51/30" alt="American Express">
+            </div>
+            <p>&copy; 2024 VoyageRêve. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Ajoutez ceci juste avant la fermeture du body -->
+    <div class="auth-modal login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Connexion</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mot de passe</label>
+                    <input type="password" id="login-password" required placeholder="Votre mot de passe">
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="auth-modal signup-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Inscription</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="signup-name">Nom complet</label>
+                    <input type="text" id="signup-name" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Mot de passe</label>
+                    <input type="password" id="signup-password" required placeholder="Choisir un mot de passe">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password-confirm">Confirmer le mot de passe</label>
+                    <input type="password" id="signup-password-confirm" required placeholder="Confirmer le mot de passe">
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="inter.js"></script>
+</body>
+</html>

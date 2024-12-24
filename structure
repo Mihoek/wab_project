@@ -1,0 +1,31 @@
+travel-booking/
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── bootstrap.min.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── validation.js
+│   │   └── bootstrap.bundle.min.js
+│   └── images/
+│       └── destinations/
+├── includes/
+│   ├── config.php
+│   ├── database.php
+│   ├── functions.php
+│   └── header.php
+├── admin/
+│   ├── index.php
+│   ├── destinations.php
+│   ├── bookings.php
+│   └── users.php
+├── api/
+│   ├── destinations.php
+│   ├── bookings.php
+│   └── reviews.php
+├── index.php
+├── login.php
+├── register.php
+├── destinations.php
+├── booking.php
+└── profile.php
